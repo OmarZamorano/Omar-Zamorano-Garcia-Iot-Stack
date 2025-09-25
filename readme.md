@@ -1,15 +1,23 @@
 # Practica Iot Stack
 Omar Zamorano Garcia #22211676
 
-1. Captura de pantalla del panel de administración de Tailscale mostrando el nodo dashboard-server.
+1. **Captura de pantalla del panel de administración de Tailscale mostrando el nodo dashboard-server.**
 
-![Tailscale](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_tailscale.PNG)
+   ![Tailscale](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_tailscale.PNG)
 
-3. Dashboard de Grafana donde se visualicen los datos de InfluxDB y las métricas de Prometheus.
+2. **Dashboard de Grafana donde se visualicen los datos de InfluxDB y las métricas de Prometheus.**
 
-![Grafana](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_grafana.PNG)
+   Grafana
+   
+   ![Grafana](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_grafana.PNG)
 
-4. Código Python utilizado para la simulación de datos.
+   Prometheus
+   
+   ![Prometheus](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_prometheus1.PNG)
+
+   ![Prometheus](https://github.com/OmarZamorano/Omar-Zamorano-Garcia-Iot-Stack/blob/main/imagenes/Captura_prometheus2.PNG)
+
+3. **Código Python utilizado para la simulación de datos.**
 
 ```
 from datetime import datetime
@@ -39,7 +47,7 @@ while True:
     time.sleep(5)
 ```
 
-5. Explicación escrita que conteste:
+4. **Explicación escrita que conteste:**
    - **¿Por qué es útil Tailscale en este escenario? (responde que permite conectar nodos mediante VPN sin exponer puertos públicos).**
 
         Tailscale sirve para conectar nodos en un red virtual privada (VPN) sin necesidad de abrir puertos públicos ya que con tailscale manda a un red virtual solo para dichos dispositivos con el fin de que puedan transferir datos entre sí, es como si todos los dispositivos estuvieran en una misma red local pero con una VPN.
